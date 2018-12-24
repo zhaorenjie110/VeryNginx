@@ -9,7 +9,7 @@ RUN apt-get update \
 RUN mkdir /code
 COPY . /code
 WORKDIR /code
-RUN groupadd -r nginx && useradd -r -g nginx nginx
+#RUN groupadd -r nginx && useradd -r -g nginx nginx
 RUN python install.py install
 
 EXPOSE 80
